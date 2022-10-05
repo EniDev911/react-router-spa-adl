@@ -10,9 +10,9 @@ import NotFoundPage from './pages/NotFoundPage'
 function App() {
   return (
     <div className="App">
-    <Router>
+    <Router basename="/react-router-spa-adl">
       <Navbar/>
-      <Routes basename="/react-router-spa-adl"> {/* Enrutamiento */}
+      <Routes> {/* Enrutamiento */}
         <Route path="/" element={<HomePage/>} />
         <Route path="/contacto" element={<ContactPage/>} />
         <Route path="*" element={<NotFoundPage/>} />
