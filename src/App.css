@@ -82,6 +82,7 @@ form button {
   width: 100%;
   font-size: 1.3em;
   background: #f4f5f9;
+  color: #222;
   padding: 4px;
   margin-top: 5px;
   border-radius: 4px;
@@ -95,6 +96,7 @@ form button {
   font-size: 1.2em;
   border-radius: 4px;
   background: #f4f5f9;
+  color: #222;
   margin-top: 5px;
   border: 1px solid #ccc;
   padding: 3px;
