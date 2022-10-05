@@ -1,9 +1,17 @@
+import { useNavigate } from 'react-router-dom';
 
 const ContactPage = () => {
+
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate("/");
+  }
   return (
     <div className="container">
       <h2>Cuentanos, ¿en que te podemos ayudar?</h2>
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className="box-field">
         <label htmlFor="email">Correo:</label>
         <input type="email" id="email" placeholder="usuario@ejemplo.com"/>
