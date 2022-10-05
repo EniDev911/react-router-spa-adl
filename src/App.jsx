@@ -12,9 +12,9 @@ function App() {
     <div className="App">
     <Router>
       <Navbar/>
-      <Routes> {/* Enrutamiento */}
-        <Route path="/react-router-spa-adl" element={<HomePage/>} />
-        <Route path="/react-router-spa-adl/contacto" element={<ContactPage/>} />
+      <Routes basename="/react-router-spa-adl"> {/* Enrutamiento */}
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/contacto" element={<ContactPage/>} />
         <Route path="*" element={<NotFoundPage/>} />
       </Routes> {/* Enrutamiento fin */}
     </Router>
