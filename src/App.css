@@ -1,14 +1,10 @@
-*{
-  padding:0;
+* {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-#root {
-  width: 100%;
-  margin: 0 auto;
-}
 
-.container{
+.container {
   max-width: 1280px;
   margin: auto;
   display: flex;
@@ -39,7 +35,7 @@ h2 {
 h5 {
   font-size: 1.3em;
 }
-.box-img{
+.box-img {
   width: 100px;
   height: 100px;
   margin: 45px 0;
@@ -48,7 +44,7 @@ h5 {
   width: 100%;
   height: 100%;
   transition-property: transform, filter;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
 
@@ -57,7 +53,7 @@ h5 {
 form {
   width: 100%;
   background-color: #f9f9f9;
-  margin : 15px 0;
+  margin: 15px 0;
 }
 
 form button {
@@ -69,10 +65,10 @@ form button {
   color: #fff;
 }
 
-.box-field{
-   width: 85%;
-   margin: 20px auto;  
-   padding: 7px;
+.box-field {
+  width: 85%;
+  margin: 20px auto;
+  padding: 7px;
 }
 
 .box-field label {
@@ -85,27 +81,22 @@ form button {
   margin-top: 5px;
   border-radius: 4px;
   border: 1px solid #ccc;
-  box-shadow: 2px 3px 2px #00000030,
-  3px 2px 2px #00000030,
-  -2px -3px 2px #00000030,
-  -3px -2px 2px #00000030;
+  box-shadow: 2px 3px 2px #00000030, 3px 2px 2px #00000030,
+    -2px -3px 2px #00000030, -3px -2px 2px #00000030;
 }
-.box-field textarea{
+.box-field textarea {
   width: 100%;
   font-size: 1.2em;
   border-radius: 4px;
   margin-top: 5px;
-  border:1px solid #ccc;
+  border: 1px solid #ccc;
   padding: 3px;
-  box-shadow: 2px 4px 2px #00000030,
-              4px 2px 2px #00000030,
-              -2px -4px 2px #00000030,
-              -4px -2px 2px #00000030;
+  box-shadow: 2px 4px 2px #00000030, 4px 2px 2px #00000030,
+    -2px -4px 2px #00000030, -4px -2px 2px #00000030;
 }
 
-
-@media(hover:hover){
-  .box-img img:hover{
+@media (hover: hover) {
+  .box-img img:hover {
     filter: drop-shadow(3px 4px 8px #f5c);
     transform: scale(1.2);
   }
