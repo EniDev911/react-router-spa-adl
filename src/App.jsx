@@ -13,8 +13,8 @@ function App() {
     <Router>
       <Navbar/>
       <Routes> {/* Enrutamiento */}
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/contacto" element={<ContactPage/>} />
+        <Route path="/react-router-spa-adl" element={<HomePage/>} />
+        <Route path="/react-router-spa-adl/contacto" element={<ContactPage/>} />
         <Route path="*" element={<NotFoundPage/>} />
       </Routes> {/* Enrutamiento fin */}
     </Router>

@@ -7,13 +7,13 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/">🏠 Home</Link> 
+          <Link to="/react-router-spa-adl">🏠 Home</Link> 
         </li>
         <li>
-          <Link to="/contacto">📬  Contacto</Link>
+          <Link to="/react-router-spa-adl/contacto">📬  Contacto</Link>
         </li>
         <li className='brand'>
-          <Link to="/">Happy Cake 🎂</Link>
+          <Link to="/react-router-spa-adl">Happy Cake 🎂</Link>
         </li>
       </ul>
     </nav>
