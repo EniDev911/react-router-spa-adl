@@ -7,7 +7,7 @@ import Router from './routes/index';
 function App() {
   return (
     <div className="App">
-    <BrowserRouter basename="/react-router-spa-adl" forceRefresh>
+    <BrowserRouter basename="/react-router-spa-adl">
       <Navbar/>
       <Router />
     </BrowserRouter>
