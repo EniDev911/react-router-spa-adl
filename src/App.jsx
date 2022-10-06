@@ -10,7 +10,7 @@ import NotFoundPage from './pages/NotFoundPage'
 function App() {
   return (
     <div className="App">
-    <Router basename="/react-router-spa-adl" forceRefresh>
+    <Router basename="/react-router-spa-adl">
       <Navbar/>
       <Routes> {/* Enrutamiento */}
         <Route path="/" element={<HomePage/>} />

@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://open.vscode.dev/EniDev911/rick-router-spa-adl">
+  <a href="https://open.vscode.dev/EniDev911/react-router-spa-adl">
 	  <img alt="GitHub repo size" src="https://img.shields.io/badge/-Abrir%20en%20VsCode.dev-%23007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=ffffff" alt="Open in Visual Studio Code" height="35">
   </a>
 	&nbsp;&nbsp;&nbsp;
