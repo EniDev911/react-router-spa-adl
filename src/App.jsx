@@ -1,23 +1,16 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } 
+import { BrowserRouter } 
 from 'react-router-dom';
 import Navbar from './components/Navbar';
-// componentes que se van a mostrar
-import HomePage from './pages/HomePage';
-import ContactPage from './pages/ContactPage';
-import NotFoundPage from './pages/NotFoundPage'
+import Router from './routes/index';
 
 function App() {
   return (
     <div className="App">
-    <Router basename="/react-router-spa-adl" forceRefresh>
+    <BrowserRouter basename="/react-router-spa-adl" forceRefresh>
       <Navbar/>
-      <Routes> {/* Enrutamiento */}
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/contacto" element={<ContactPage/>} />
-        <Route path="*" element={<NotFoundPage/>} />
-      </Routes> {/* Enrutamiento fin */}
-    </Router>
+      <Router />
+    </BrowserRouter>
     </div>
   )
 }

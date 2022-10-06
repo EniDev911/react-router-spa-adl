@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -16,6 +16,7 @@ const Navbar = () => {
           <Link to="/">Happy Cake 🎂</Link>
         </li>
       </ul>
+      <Outlet />
     </nav>
   )
 }
