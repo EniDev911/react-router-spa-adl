@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import './navbar.css';
+import { Link, Outlet } from 'react-router-dom';
+import './mainLayout.css';
 
-const Navbar = () => {
+const MainLayout = () => {
   return (
+    <>
     <nav>
       <ul>
         <li>
@@ -17,7 +18,9 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
+      <Outlet/>
+    </>
   )
 }
 
-export default Navbar
+export default MainLayout

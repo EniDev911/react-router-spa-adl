@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } 
 from 'react-router-dom';
-import Navbar from './components/Navbar';
+import MainLayout from './components/MainLayout';
 // componentes que se van a mostrar
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
@@ -10,14 +10,15 @@ import NotFoundPage from './pages/NotFoundPage'
 function App() {
   return (
     <div className="App">
-    <Router basename="/react-router-spa-adl">
-      <Navbar/>
-      <Routes> {/* Enrutamiento */}
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/contacto" element={<ContactPage/>} />
-        <Route path="*" element={<NotFoundPage/>} />
-      </Routes> {/* Enrutamiento fin */}
-    </Router>
+    <Router basename="/react-router-spa-adl"> {/* Enrutamiento */}
+      <Routes> 
+        <Route path="/" element={<MainLayout/>} >
+          <Route index element={<HomePage/>}/>
+          <Route path="contacto" element={<ContactPage/>} />
+          <Route path="*" element={<NotFoundPage/>} />
+        </Route>
+      </Routes> 
+    </Router> {/* Enrutamiento fin */}
     </div>
   )
 }
