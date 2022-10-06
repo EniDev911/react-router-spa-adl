@@ -5,7 +5,7 @@ import ContactPage from "../pages/ContactPage";
 import NotFoundPage from "../pages/NotFoundPage";
 
 export default function Router(){
-    let element = useRoutes([
+    const element = useRoutes([
         {
             path: "/",   
             element: <HomePage/>
